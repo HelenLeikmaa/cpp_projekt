@@ -1,13 +1,18 @@
 https://tartu2024.ee/kultuuripealinnast 
 
-Küsimus:
-Euroopa kultuuripealinna Tartu 2024 programmi kunstiline kontseptsioon kannab nime Ellujäämise Kunstid. 
-Millised on programmi neli kõige olulisemat Ellujäämise Kunsti?
+<b>Formaat:</b> 
 
-Õiged vastused:
-omapärasus
-jätkusuutlikkus
-ärksameelsus
+KÃ¼simus; kÃ¼simuse tÃ¼Ã¼p; Ã•ige vastus1, Ãµige vastus 2, ...  ; Vale vastus 1, vale vastus 2, ...
+
+KÃ¼simus:
+(1) * Linnukeste kÃ¼simus
+Euroopa kultuuripealinna Tartu 2024 programmi kunstiline kontseptsioon kannab nime EllujÃ¤Ã¤mise Kunstid. 
+Millised on programmi nenoli kÃµige olulisemat EllujÃ¤Ã¤mise Kunsti?
+
+Ã•iged vastused:
+omapÃ¤rasus
+jÃ¤tkusuutlikkus
+Ã¤rksameelsus
 koosloovus
 
 Valed vastused:
