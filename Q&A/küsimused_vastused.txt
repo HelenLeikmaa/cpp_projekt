@@ -4,19 +4,7 @@ https://tartu2024.ee/kultuuripealinnast
 
 Küsimus; küsimuse tüüp; Õige vastus1, õige vastus 2, ...  ; Vale vastus 1, vale vastus 2, ...
 
-Küsimus:
-(1) * Linnukeste küsimus
-Euroopa kultuuripealinna Tartu 2024 programmi kunstiline kontseptsioon kannab nime Ellujäämise Kunstid. 
-Millised on programmi nenoli kõige olulisemat Ellujäämise Kunsti?
-
-Õiged vastused:
-omapärasus
-jätkusuutlikkus
-ärksameelsus
-koosloovus
-
-Valed vastused:
-isemeelsus
-riskivalmidus
-
+(1) Euroopa kultuuripealinna Tartu 2024 programmi kunstiline kontseptsioon kannab nime Ellujäämise Kunstid. Millised on programmi neli kõige olulisemat Ellujäämise Kunsti?; Linnukeste küsimus; omapärasus, jätkusuutlikkus, ärksameelsus, koosloovus;; isemeelsus, riskivalmidus
+(2) Mis on parimad lehmanimed?; Linnukeste küsimus; Meeli, Mustik, Sabak; Tainak, Mari, Kala
+(3) Millised neist on loomad?; Linnukeste küsimus; kass, hamster, muul; kala, kajakas, vihmauss
 
