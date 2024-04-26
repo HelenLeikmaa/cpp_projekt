@@ -1,9 +1,11 @@
 # ninja log v5
-2	1132	7354160569147335	kysitlus_Tartu2024_autogen/timestamp	e7aee00b1348d24e
-2	1132	7354160569147335	kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e7aee00b1348d24e
-2	1132	7354160569147335	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/kysitlus_Tartu2024_autogen/timestamp	e7aee00b1348d24e
-2	1132	7354160569147335	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e7aee00b1348d24e
-1133	5177	7354160610976983	CMakeFiles/kysitlus_Tartu2024.dir/kysitlus_Tartu2024_autogen/mocs_compilation.cpp.obj	5a41c732ae259d81
-1149	5229	7354160611508740	CMakeFiles/kysitlus_Tartu2024.dir/main.cpp.obj	bd76a94db3cac196
-1139	5301	7354160612233756	CMakeFiles/kysitlus_Tartu2024.dir/mainwindow.cpp.obj	d77a8e7e172bd
-5301	5713	7354160616266729	kysitlus_Tartu2024.exe	88a47acfe33d4bb5
+10	225	7358429109867600	kysitlus_Tartu2024_autogen/timestamp	e7aee00b1348d24e
+251	336	7358429110866590	CMakeFiles/kysitlus_Tartu2024.dir/gatheringResults.cpp.obj	40d342dcf0052a5
+10	225	7358429109867600	kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e7aee00b1348d24e
+10	225	7358429109867600	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/kysitlus_Tartu2024_autogen/timestamp	e7aee00b1348d24e
+3433	3740	7358429144929952	kysitlus_Tartu2024.exe	18a6d53346a3b883
+10	225	7358429109867600	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e7aee00b1348d24e
+1758	7405	7358417789796864	CMakeFiles/kysitlus_Tartu2024.dir/kysitlus_Tartu2024_autogen/mocs_compilation.cpp.obj	5a41c732ae259d81
+247	3432	7358429141927807	CMakeFiles/kysitlus_Tartu2024.dir/mainwindow.cpp.obj	d77a8e7e172bd
+1769	7562	7358417791404429	CMakeFiles/kysitlus_Tartu2024.dir/main.cpp.obj	bd76a94db3cac196
+337	479	7358427610226020	CMakeFiles/kysitlus_Tartu2024.dir/sendingQuestions.cpp.obj	61c38be0bbbfcc42

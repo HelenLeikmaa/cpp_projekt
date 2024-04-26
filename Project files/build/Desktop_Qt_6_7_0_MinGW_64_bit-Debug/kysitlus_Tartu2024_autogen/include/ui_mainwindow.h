@@ -12,49 +12,61 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
-#include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
-class Ui_MainWindow
+class Ui_Tartu2024
 {
 public:
     QWidget *centralwidget;
-    QMenuBar *menubar;
-    QStatusBar *statusbar;
 
-    void setupUi(QMainWindow *MainWindow)
+    void setupUi(QMainWindow *Tartu2024)
     {
-        if (MainWindow->objectName().isEmpty())
-            MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(800, 600);
-        centralwidget = new QWidget(MainWindow);
+        if (Tartu2024->objectName().isEmpty())
+            Tartu2024->setObjectName("Tartu2024");
+        Tartu2024->resize(476, 562);
+        Tartu2024->setMinimumSize(QSize(150, 250));
+        Tartu2024->setMaximumSize(QSize(600, 800));
+        Tartu2024->setBaseSize(QSize(200, 250));
+        QPalette palette;
+        QBrush brush(QColor(0, 170, 0, 255));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Button, brush);
+        QBrush brush1(QColor(255, 255, 155, 255));
+        brush1.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Active, QPalette::Highlight, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Button, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::Highlight, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::Button, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Window, brush1);
+        Tartu2024->setPalette(palette);
+        QFont font;
+        font.setPointSize(12);
+        font.setBold(true);
+        Tartu2024->setFont(font);
+        Tartu2024->setAutoFillBackground(false);
+        centralwidget = new QWidget(Tartu2024);
         centralwidget->setObjectName("centralwidget");
-        MainWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 800, 17));
-        MainWindow->setMenuBar(menubar);
-        statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName("statusbar");
-        MainWindow->setStatusBar(statusbar);
+        Tartu2024->setCentralWidget(centralwidget);
 
-        retranslateUi(MainWindow);
+        retranslateUi(Tartu2024);
 
-        QMetaObject::connectSlotsByName(MainWindow);
+        QMetaObject::connectSlotsByName(Tartu2024);
     } // setupUi
 
-    void retranslateUi(QMainWindow *MainWindow)
+    void retranslateUi(QMainWindow *Tartu2024)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        Tartu2024->setWindowTitle(QCoreApplication::translate("Tartu2024", "Tartu2024", nullptr));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class MainWindow: public Ui_MainWindow {};
+    class Tartu2024: public Ui_Tartu2024 {};
 } // namespace Ui
 
 QT_END_NAMESPACE

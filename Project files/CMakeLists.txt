@@ -18,6 +18,10 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        sendingQuestions.h
+        sendingQuestions.cpp
+        gatheringResults.h
+        gatheringResults.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
