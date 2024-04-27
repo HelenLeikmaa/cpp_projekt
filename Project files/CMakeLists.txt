@@ -18,8 +18,8 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        sendingQuestions.h
-        sendingQuestions.cpp
+        question.h
+        question.cpp
         gatheringResults.h
         gatheringResults.cpp
 )

@@ -5,16 +5,17 @@
 #include <QGridLayout>
 #include <QLabel>
 #include <QPushButton>
-#include <QLineEdit>
 #include <QCheckBox>
 #include <QMessageBox>
 #include <QDebug>
+#include <QVector>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Tartu2024;
 }
 QT_END_NAMESPACE
+#include "question.h"
 
 class MainWindow : public QMainWindow
 {
@@ -27,10 +28,15 @@ public:
 private slots:
     void on_CheckAnswer_clicked();
 
-    //void on_checkBox_stateChanged(int arg1);
-
 private:
     Ui::Tartu2024 *ui;
-    void setVisibility(QWidget); // ei ole veel kasutuses
+    QGridLayout *layout;
+    QLabel *question_label;
+    vector<QCheckBox*> *checkboxes;
+    QPushButton *check_answers_btn;
+
+    void create_grid();
+    void populate_checkboxes(Question*);
+
 };
 #endif // MAINWINDOW_H

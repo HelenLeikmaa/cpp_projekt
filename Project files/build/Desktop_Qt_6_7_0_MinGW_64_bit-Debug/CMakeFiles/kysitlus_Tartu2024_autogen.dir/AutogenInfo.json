@@ -267,9 +267,9 @@
 			null
 		],
 		[
-			"C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/sendingQuestions.h",
+			"C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/question.h",
 			"MU",
-			"EWIEGA46WW/moc_sendingQuestions.cpp",
+			"EWIEGA46WW/moc_question.cpp",
 			null
 		]
 	],
@@ -360,7 +360,7 @@
 			null
 		],
 		[
-			"C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/sendingQuestions.cpp",
+			"C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/question.cpp",
 			"MU",
 			null
 		]
