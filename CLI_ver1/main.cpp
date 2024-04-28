@@ -25,9 +25,12 @@ int main(int argc, char *argv[])
         QFileInfo fileInfo = list.at(i);
         qDebug() << fileInfo.fileName() << '\n'; }
 
-    string filename = "questions.txt";
-    string inputFileDirectory = "C:/Users/smirn/Desktop/Qt 3/Kysitlus_Tartu2024/" + filename; // kuidas muuta project et uuriks project kausta?
-    vector<Question> formQuestions = makeQuestionObjects(inputFileDirectory);
+    // Kysimuste fail
+    QDir inputFileDirectory(filesystem::current_path());
+
+    QString path = inputFileDirectory.filePath("questions.txt");
+
+    vector<Question> formQuestions = makeQuestionObjects(path.toStdString());
 
 
     // CLI start
