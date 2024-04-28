@@ -387,10 +387,10 @@ C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/mainwindow.h
  mdp:C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/kysitlus_Tartu2024_autogen/moc_predefs.h
  mdp:C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/mainwindow.h
  mdp:C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/question.h
-C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/main.cpp
-C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/question.h
 C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/mainwindow.cpp
  uic:./ui_mainwindow.h
+C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/main.cpp
+C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/question.h
 C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/sendingQuestions.h
 C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/sendingQuestions.cpp
 C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/gatheringResults.h

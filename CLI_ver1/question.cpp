@@ -5,10 +5,10 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
+#include <QString>
 using namespace std;
 
 vector<Question> makeQuestionObjects(const string& filename){
-
     ifstream inputFile(filename);
 
     // Check if the file is open
