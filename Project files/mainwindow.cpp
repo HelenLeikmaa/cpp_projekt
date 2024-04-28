@@ -26,7 +26,7 @@ MainWindow::~MainWindow() {delete ui; }
 void MainWindow::create_grid(){
     Question *q = new Question();
 
-    QString question = q->getQuestion();
+    QString question = q->getQuestionText();
     question_label->setText(question);
     layout->addWidget(question_label, 0, 0);
 
@@ -37,7 +37,7 @@ void MainWindow::create_grid(){
 
 
 void MainWindow::populate_checkboxes(Question* q){
-    auto [all_answers, correct_indexes] = q->all_answers_correct_indexes(q->get_correct_answers(), q->get_incorrect_answers());
+    auto [all_answers, correct_indexes] = q->combined_answers_and_indexes_of_correct_answers(q->get_correct_answers(), q->get_incorrect_answers());
     for (size_t i = 0; i < all_answers.size(); ++i) {
         QCheckBox *box = new QCheckBox();
         qDebug() << all_answers[i] << '\n';
