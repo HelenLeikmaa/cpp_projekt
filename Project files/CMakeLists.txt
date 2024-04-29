@@ -28,6 +28,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(kysitlus_Tartu2024
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        #QA.txt
+        #kas see peab siin olema?
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET kysitlus_Tartu2024 APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

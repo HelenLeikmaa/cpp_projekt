@@ -200,7 +200,7 @@ build kysitlus_Tartu2024_autogen/timestamp kysitlus_Tartu2024_autogen/mocs_compi
 #############################################
 # Phony custom command for CMakeFiles\kysitlus_Tartu2024_autogen_timestamp_deps
 
-build CMakeFiles/kysitlus_Tartu2024_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/kysitlus_Tartu2024_autogen_timestamp_deps: phony C$:/Qt/6.7.0/mingw_64/./bin/moc.exe C$:/Qt/6.7.0/mingw_64/./bin/uic.exe C$:/Qt/6.7.0/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.7.0/mingw_64/lib/libQt6Core.a
+build CMakeFiles/kysitlus_Tartu2024_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/kysitlus_Tartu2024_autogen_timestamp_deps: phony C$:/Qt/6.7.0/mingw_64/./bin/moc.exe C$:/Qt/6.7.0/mingw_64/./bin/uic.exe C$:/Qt/6.7.0/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.0/mingw_64/lib/libQt6Widgets.a
 
 
 #############################################

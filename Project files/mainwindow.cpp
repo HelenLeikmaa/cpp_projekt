@@ -8,13 +8,10 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Tartu2024)
 {
-    ui->setupUi(this);    
-    layout = new QGridLayout();
-    question_label = new QLabel();
-    checkboxes = new vector<QCheckBox*>;
-    check_answers_btn = new QPushButton();
-    create_grid();
-    this->centralWidget()->setLayout(layout);
+    ui->setupUi(this);
+    const string& file_name = "QA.txt";
+    all_questions = Question::read_questions_from_file(file_name);
+    opening_window_ui();
 
     QObject::connect(check_answers_btn, &QPushButton::clicked,
                      this, &MainWindow::on_CheckAnswer_clicked); // clicking on "Kontrolli" sends out a signal to a slot
@@ -22,7 +19,14 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow() {delete ui; }
 
-
+void MainWindow::opening_window_ui(){
+    layout = new QGridLayout();
+    question_label = new QLabel();
+    checkboxes = new vector<QCheckBox*>;
+    check_answers_btn = new QPushButton();
+    create_grid();
+    this->centralWidget()->setLayout(layout);
+};
 void MainWindow::create_grid(){
     Question *q = new Question();
 
@@ -37,11 +41,10 @@ void MainWindow::create_grid(){
 
 
 void MainWindow::populate_checkboxes(Question* q){
-    auto [all_answers, correct_indexes] = q->combined_answers_and_indexes_of_correct_answers(q->get_correct_answers(), q->get_incorrect_answers());
-    for (size_t i = 0; i < all_answers.size(); ++i) {
+    auto [answers, correct_indexes] = q->combined_answers_and_indexes_of_correct_answers(q->get_correct_answers(), q->get_incorrect_answers());
+    for (size_t i = 0; i < answers.size(); ++i) {
         QCheckBox *box = new QCheckBox();
-        qDebug() << all_answers[i] << '\n';
-        box->setText(all_answers[i]);
+        box->setText(answers[i]);
         layout->addWidget(box);
         checkboxes->push_back(box);} // to be used in assessing user answers
 };
