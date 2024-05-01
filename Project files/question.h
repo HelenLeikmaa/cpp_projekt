@@ -22,8 +22,8 @@ private:
 public:
     Question() = default;
     Question(QString, QString, vector<QString>, vector<QString>); // constructing Q from private members
-    Question(vector<string>); // constructing Q from a vector containing 4 strings to be converted to private members
-    static vector<Question*>* read_questions_from_file(const string&); // uses the constructor Question(vector<string>)
+    Question(const vector<string>&); // constructing Q from a vector containing 4 strings to be converted to private members
+    static vector<Question> read_questions_from_file(const string&); // uses the constructor Question(vector<string>)
     QString getQuestionText();
     vector<QString> get_correct_answers();
     vector<QString> get_incorrect_answers();

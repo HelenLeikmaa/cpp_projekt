@@ -28,6 +28,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(kysitlus_Tartu2024
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        QA_attempt_3.txt
         #QA.txt
         #kas see peab siin olema?
     )

@@ -36,7 +36,7 @@ private:
     vector<QCheckBox*> *checkboxes;
     QPushButton *check_answers_btn;
 
-    vector<Question*> *all_questions;
+    vector<Question> all_questions;
 
     void opening_window_ui();
     void create_grid();
