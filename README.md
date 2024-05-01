@@ -1,4 +1,5 @@
 LTAT.03.025, C++, and Qt feat. Helen & Marko
+
 Kaustas CLI_ver1 on käsureal jooksev versioon meie programmist. See töötab ühes arvutis ja ei tööta teises, nii et ole valmis üllatuseks!
 Kaustas Project Files on graafilise kasutajaliidesega versioon, mille võimed ei ole liiga suured. See on okei ja tulevik toob kaasa uusi häid võimalusi:)
 
