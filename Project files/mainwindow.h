@@ -9,6 +9,7 @@
 #include <QMessageBox>
 #include <QDebug>
 #include <QVector>
+#include <QDir>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

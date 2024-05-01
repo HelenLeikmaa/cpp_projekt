@@ -9,9 +9,15 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::Tartu2024)
 {
     ui->setupUi(this);
-    const string& file_name = "QA.txt";
+    //const string& file_name = "QA_in_cpp_projekt.txt";
+    const string& file_name = "QA_in_Project_files.txt";
     all_questions = Question::read_questions_from_file(file_name);
     opening_window_ui();
+
+
+    /*QDir inputFileDirectory(filesystem::current_path());
+    QString path = inputFileDirectory.filePath("QA.txt");
+    all_questions = Question::read_questions_from_file(path.toStdString());*/
 
     QObject::connect(check_answers_btn, &QPushButton::clicked,
                      this, &MainWindow::on_CheckAnswer_clicked); // clicking on "Kontrolli" sends out a signal to a slot
