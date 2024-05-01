@@ -49,9 +49,17 @@ void MainWindow::populate_checkboxes(Question* q){
 };
 
 
-void MainWindow::on_CheckAnswer_clicked() // the button "Kontrolli" was clicked
-{
-    QString feedback = "Tubli, sa oskad imehästi kastikesi linnutada!"; // TODO
+void MainWindow::on_CheckAnswer_clicked(){ // the button "Kontrolli" was clicked
+    vector<int> checked_boxes;
+    QString checked_indexes_as_string{""};
+    for (size_t i = 0; i < checkboxes->size(); ++i){
+        if ((checkboxes->at(i))->isChecked()) {
+            checked_boxes.push_back(i);
+            checked_indexes_as_string += (' ' + QString::number(i));}
+    }
+    QString feedback = checked_indexes_as_string.length() > 0 ?
+        "Linnutasid kastikese(d)" + checked_indexes_as_string + "\nVastuste kontroll on lisandumas <3" :
+            "Sa ei linnutanudki miskit:(";
     QMessageBox::about(this, "Tagasiside", feedback);
 
 }
