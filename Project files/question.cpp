@@ -1,6 +1,5 @@
 #include "question.h"
 // modified version of cpp_projekt/CLI_ver1/question.cpp
-// possibly hardcode the questions for 1st deadline
 
 
 Question::Question(QString q, QString type, vector<QString> correct, vector<QString> incorrect):
@@ -60,22 +59,13 @@ Question::Question(const vector<string>& parts_of_one_question){
 }
 
 
-pair<vector<QString>, vector<int>> Question::combined_answers_and_indexes_of_correct_answers(const vector<QString>& correct, const vector<QString>& incorrect){
-    // for checking user answer
+vector<QString> Question::combined_answers(const vector<QString>& correct, const vector<QString>& incorrect){
     vector<QString> all_answers;
-    vector<int> correct_indexes;
 
     all_answers.insert(all_answers.end(), correct.begin(), correct.end());
     all_answers.insert(all_answers.end(),incorrect.begin(), incorrect.end());
     random_shuffle(all_answers.begin(), all_answers.end());
 
-    size_t current_index = 0;
-    for (const QString& answer : all_answers) {
-        if (find(correct.begin(), correct.end(), answer)!= correct.end()) { // the string comes from the original vector correct<>
-            correct_indexes.push_back(current_index);                       // the index of a correct answer in the vector all_answers
-        }
-        ++current_index;
-    }
-    return {all_answers, correct_indexes};
+    return all_answers;
 }
 

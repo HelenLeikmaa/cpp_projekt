@@ -20,8 +20,8 @@ set(PROJECT_SOURCES
         mainwindow.ui
         question.h
         question.cpp
-        gatheringResults.h
-        gatheringResults.cpp
+        results.h
+        results.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

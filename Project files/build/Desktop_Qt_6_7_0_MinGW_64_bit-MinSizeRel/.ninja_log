@@ -1,0 +1,22 @@
+# ninja log v5
+1	179	0	CMakeFiles/clean.additional	e9ab007591c55af8
+4	2063	7361156403552084	kysitlus_Tartu2024_autogen/mocs_compilation.cpp	7f1fa871cb5aa6a9
+2095	2539	7361156408402322	CMakeFiles/kysitlus_Tartu2024.dir/gatheringResults.cpp.obj	d906433dcdc1f764
+180	201	0	clean	577b940aee94fbd7
+4	2063	7361156403552084	kysitlus_Tartu2024_autogen/timestamp	7f1fa871cb5aa6a9
+4	2063	7361156403552084	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-MinSizeRel/kysitlus_Tartu2024_autogen/timestamp	7f1fa871cb5aa6a9
+4	2063	7361156403552084	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-MinSizeRel/kysitlus_Tartu2024_autogen/mocs_compilation.cpp	7f1fa871cb5aa6a9
+2081	8220	7361156466402011	CMakeFiles/kysitlus_Tartu2024.dir/main.cpp.obj	ba774d12fd5d19ed
+2065	8358	7361156467723342	CMakeFiles/kysitlus_Tartu2024.dir/kysitlus_Tartu2024_autogen/mocs_compilation.cpp.obj	aa1ff5e05a22aaa4
+2076	8446	7361156468651023	CMakeFiles/kysitlus_Tartu2024.dir/question.cpp.obj	f389ce11571b54e2
+2071	8581	7361156469979704	CMakeFiles/kysitlus_Tartu2024.dir/mainwindow.cpp.obj	ddef3bffd4fc4d4e
+8582	8999	7361156473931451	kysitlus_Tartu2024.exe	c920020e32e528c5
+53	8194	7361161057368268	kysitlus_Tartu2024_autogen/timestamp	7f1fa871cb5aa6a9
+53	8194	7361161057368268	kysitlus_Tartu2024_autogen/mocs_compilation.cpp	7f1fa871cb5aa6a9
+53	8194	7361161057368268	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-MinSizeRel/kysitlus_Tartu2024_autogen/timestamp	7f1fa871cb5aa6a9
+53	8194	7361161057368268	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-MinSizeRel/kysitlus_Tartu2024_autogen/mocs_compilation.cpp	7f1fa871cb5aa6a9
+8261	17125	7361161152274483	CMakeFiles/kysitlus_Tartu2024.dir/question.cpp.obj	f389ce11571b54e2
+8256	17144	7361161152434278	CMakeFiles/kysitlus_Tartu2024.dir/main.cpp.obj	ba774d12fd5d19ed
+8212	17189	7361161152914311	CMakeFiles/kysitlus_Tartu2024.dir/kysitlus_Tartu2024_autogen/mocs_compilation.cpp.obj	aa1ff5e05a22aaa4
+8248	17376	7361161154904316	CMakeFiles/kysitlus_Tartu2024.dir/mainwindow.cpp.obj	ddef3bffd4fc4d4e
+17376	17794	7361161158998821	kysitlus_Tartu2024.exe	c920020e32e528c5

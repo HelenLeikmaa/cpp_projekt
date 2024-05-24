@@ -27,7 +27,7 @@ public:
     QString getQuestionText();
     vector<QString> get_correct_answers();
     vector<QString> get_incorrect_answers();
-    pair<vector<QString>, vector<int>> combined_answers_and_indexes_of_correct_answers(const vector<QString>&, const vector<QString>&);
+    vector<QString> combined_answers(const vector<QString>&, const vector<QString>&);
 
 };
 

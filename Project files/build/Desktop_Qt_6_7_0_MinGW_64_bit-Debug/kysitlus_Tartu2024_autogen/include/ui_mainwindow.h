@@ -25,10 +25,10 @@ public:
     {
         if (Tartu2024->objectName().isEmpty())
             Tartu2024->setObjectName("Tartu2024");
-        Tartu2024->resize(476, 562);
-        Tartu2024->setMinimumSize(QSize(150, 250));
-        Tartu2024->setMaximumSize(QSize(600, 800));
-        Tartu2024->setBaseSize(QSize(200, 250));
+        Tartu2024->resize(715, 319);
+        Tartu2024->setMinimumSize(QSize(300, 150));
+        Tartu2024->setMaximumSize(QSize(800, 800));
+        Tartu2024->setBaseSize(QSize(600, 250));
         QPalette palette;
         QBrush brush(QColor(0, 170, 0, 255));
         brush.setStyle(Qt::SolidPattern);

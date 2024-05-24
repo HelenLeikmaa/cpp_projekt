@@ -10,6 +10,7 @@
 #include <QDebug>
 #include <QVector>
 #include <QDir>
+#include <iostream>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -17,6 +18,7 @@ class Tartu2024;
 }
 QT_END_NAMESPACE
 #include "question.h"
+#include "results.h"
 
 class MainWindow : public QMainWindow
 {
@@ -25,6 +27,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    size_t current_q_index;
+    int score;
 
 private slots:
     void on_CheckAnswer_clicked();

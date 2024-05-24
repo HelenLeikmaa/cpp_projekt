@@ -1,0 +1,12 @@
+# ninja log v5
+21	405	7382679490624147	kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+21	405	7382679490624147	kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+1439	8175	7362835567805388	CMakeFiles/kysitlus_Tartu2024.dir/gatheringResults.cpp.obj	cd3bfbe80840a4cc
+1227	7241	7382588088320339	CMakeFiles/kysitlus_Tartu2024.dir/question.cpp.obj	da85ab9a4b690416
+21	405	7382679490624147	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+21	405	7382679490624147	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+7592	15615	7382675939028565	CMakeFiles/kysitlus_Tartu2024.dir/main.cpp.obj	f9e73a21a2eba5bb
+7574	15363	7382675936518546	CMakeFiles/kysitlus_Tartu2024.dir/kysitlus_Tartu2024_autogen/mocs_compilation.cpp.obj	a05eb3a1e4e8949e
+446	7363	7382679560271943	CMakeFiles/kysitlus_Tartu2024.dir/mainwindow.cpp.obj	aeab464675b778f3
+7364	7728	7382679563838354	kysitlus_Tartu2024.exe	a66206828ce87a08
+440	4039	7382679526978189	CMakeFiles/kysitlus_Tartu2024.dir/results.cpp.obj	68ee0f4b93729d25
