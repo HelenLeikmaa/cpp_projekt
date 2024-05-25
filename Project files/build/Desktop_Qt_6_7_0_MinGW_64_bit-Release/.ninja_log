@@ -1,12 +1,56 @@
 # ninja log v5
-21	405	7382679490624147	kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
-21	405	7382679490624147	kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+17	316	7383447295467934	kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+17	316	7383447295467934	kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
 1439	8175	7362835567805388	CMakeFiles/kysitlus_Tartu2024.dir/gatheringResults.cpp.obj	cd3bfbe80840a4cc
-1227	7241	7382588088320339	CMakeFiles/kysitlus_Tartu2024.dir/question.cpp.obj	da85ab9a4b690416
-21	405	7382679490624147	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
-21	405	7382679490624147	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
-7592	15615	7382675939028565	CMakeFiles/kysitlus_Tartu2024.dir/main.cpp.obj	f9e73a21a2eba5bb
-7574	15363	7382675936518546	CMakeFiles/kysitlus_Tartu2024.dir/kysitlus_Tartu2024_autogen/mocs_compilation.cpp.obj	a05eb3a1e4e8949e
-446	7363	7382679560271943	CMakeFiles/kysitlus_Tartu2024.dir/mainwindow.cpp.obj	aeab464675b778f3
-7364	7728	7382679563838354	kysitlus_Tartu2024.exe	a66206828ce87a08
+236	4045	7383390424273270	CMakeFiles/kysitlus_Tartu2024.dir/question.cpp.obj	da85ab9a4b690416
+17	316	7383447295467934	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+17	316	7383447295467934	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+2387	10855	7383387448522236	CMakeFiles/kysitlus_Tartu2024.dir/main.cpp.obj	f9e73a21a2eba5bb
+2381	10922	7383387449201025	CMakeFiles/kysitlus_Tartu2024.dir/kysitlus_Tartu2024_autogen/mocs_compilation.cpp.obj	a05eb3a1e4e8949e
+350	6980	7383447362123845	CMakeFiles/kysitlus_Tartu2024.dir/mainwindow.cpp.obj	aeab464675b778f3
+6981	7360	7383447365814322	kysitlus_Tartu2024.exe	a66206828ce87a08
 440	4039	7382679526978189	CMakeFiles/kysitlus_Tartu2024.dir/results.cpp.obj	68ee0f4b93729d25
+16	324	7383447943445179	kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+16	324	7383447943445179	kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+16	324	7383447943445179	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+16	324	7383447943445179	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+358	6984	7383448010080030	CMakeFiles/kysitlus_Tartu2024.dir/mainwindow.cpp.obj	aeab464675b778f3
+6985	7346	7383448013608966	kysitlus_Tartu2024.exe	a66206828ce87a08
+17	357	7383448428609649	kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+17	357	7383448428609649	kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+17	357	7383448428609649	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+17	357	7383448428609649	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+388	7374	7383448499132266	CMakeFiles/kysitlus_Tartu2024.dir/mainwindow.cpp.obj	aeab464675b778f3
+7375	7742	7383448502730151	kysitlus_Tartu2024.exe	a66206828ce87a08
+16	310	7383450975648991	kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+16	310	7383450975648991	kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+16	310	7383450975648991	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+16	310	7383450975648991	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+340	7116	7383451043732157	CMakeFiles/kysitlus_Tartu2024.dir/mainwindow.cpp.obj	aeab464675b778f3
+7118	7524	7383451047736307	kysitlus_Tartu2024.exe	a66206828ce87a08
+17	3579	7383453118740590	kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+17	3579	7383453118740590	kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+17	3579	7383453118740590	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+17	3579	7383453118740590	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+3581	9992	7383453184142418	CMakeFiles/kysitlus_Tartu2024.dir/kysitlus_Tartu2024_autogen/mocs_compilation.cpp.obj	a05eb3a1e4e8949e
+3592	10537	7383453189596525	CMakeFiles/kysitlus_Tartu2024.dir/main.cpp.obj	f9e73a21a2eba5bb
+3587	10698	7383453191212337	CMakeFiles/kysitlus_Tartu2024.dir/mainwindow.cpp.obj	aeab464675b778f3
+10699	11132	7383453195427263	kysitlus_Tartu2024.exe	a66206828ce87a08
+16	318	7383455069829968	kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+16	318	7383455069829968	kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+16	318	7383455069829968	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+16	318	7383455069829968	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+350	7054	7383455137217198	CMakeFiles/kysitlus_Tartu2024.dir/mainwindow.cpp.obj	aeab464675b778f3
+7055	7424	7383455140832092	kysitlus_Tartu2024.exe	a66206828ce87a08
+13	270	7383462090789045	kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+13	270	7383462090789045	kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+13	270	7383462090789045	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+13	270	7383462090789045	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+299	5082	7383462138917099	CMakeFiles/kysitlus_Tartu2024.dir/mainwindow.cpp.obj	aeab464675b778f3
+5082	5344	7383462141493327	kysitlus_Tartu2024.exe	a66206828ce87a08
+16	391	7383463291294615	kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+16	391	7383463291294615	kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+16	391	7383463291294615	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/timestamp	e910b9ae507519cf
+16	391	7383463291294615	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/mocs_compilation.cpp	e910b9ae507519cf
+424	7187	7383463359297729	CMakeFiles/kysitlus_Tartu2024.dir/mainwindow.cpp.obj	aeab464675b778f3
+7188	7555	7383463362892277	kysitlus_Tartu2024.exe	a66206828ce87a08

@@ -4,21 +4,21 @@
 #include "results.h"
 
 
+static size_t current_q_index = 0; // this will increase each time a new question is selected
+static int score = 0; // TODO
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Tartu2024)
 {
     ui->setupUi(this);
     const string& file_name = "QA_attempt_3.txt";
-
     all_questions = Question::read_questions_from_file(file_name);
-    current_q_index = 0; // this will increase each time a new question is selected
-    score = 0; // TODO
     opening_window_ui();
-
     QObject::connect(check_answers_btn, &QPushButton::clicked,
                      this, &MainWindow::on_CheckAnswer_clicked); // clicking on "Kontrolli" sends out a signal to a slot
 }
+
 
 MainWindow::~MainWindow() {delete ui; }
 
@@ -27,20 +27,19 @@ void MainWindow::opening_window_ui(){
     question_label = new QLabel();
     checkboxes = new vector<QCheckBox*>;
     check_answers_btn = new QPushButton();
-    create_grid();
+    create_grid(current_q_index);
     this->centralWidget()->setLayout(layout);
-
 };
 
-void MainWindow::create_grid(){
+void MainWindow::create_grid(size_t current_q_index){
+    cleanup();
     Question &q = all_questions.at(current_q_index);
     QString question = q.getQuestionText();
     question_label->setText(question);
-    layout->addWidget(question_label, 0, 0);
-
+    layout->addWidget(question_label);
     populate_checkboxes(&q);
     check_answers_btn->setText("Kontrolli!");
-    layout->addWidget(check_answers_btn, 7, 0);
+    layout->addWidget(check_answers_btn);
 }
 
 
@@ -55,18 +54,42 @@ void MainWindow::populate_checkboxes(Question* q){
     }
 };
 
+void MainWindow::cleanup() {
+    layout->destroyed(question_label);
+    for (auto& element : *checkboxes) {
+        delete element;
+    }
+}
 
 void MainWindow::on_CheckAnswer_clicked(){ // the button "Kontrolli" was clicked
+
     vector<QString> correct = all_questions[current_q_index].get_correct_answers();
     vector<QString> selected{}; // here be the answers the user selected
     for (const auto& element : *checkboxes) {
         if (element->isChecked()) {
             selected.push_back(element->text());
         }
-    }
+    }   
     UserAnswer answer;
-    QString feedback = "\nÕigesti valitud: " + QString::number(answer.assessAnswer(correct, selected));
+    int result = answer.assessAnswer(correct, selected);
+    QString feedback = "Õigesti valitud: " + QString::number(result);
+    if (result == selected.size() && result == correct.size()){
+        feedback += "\nHea töö, see ongi õige vastus!";
+        current_q_index++;
+        }
+    else {
+        feedback += "\n..aga vastus ei ole päris korrektne:(\nProovi uuesti!";
+    }
     QMessageBox::about(this, "Tagasiside", feedback);
+    if (current_q_index < all_questions.size()) {
+        create_grid(current_q_index);
+    }
+    else {
+        question_label->setText("Jee, jõudsid edukalt lõpuni!");
+        cleanup();
+        check_answers_btn->hide();
+    }
+
 
 }
 

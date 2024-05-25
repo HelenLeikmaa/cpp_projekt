@@ -27,8 +27,6 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    size_t current_q_index;
-    int score;
 
 private slots:
     void on_CheckAnswer_clicked();
@@ -43,7 +41,8 @@ private:
     vector<Question> all_questions;
 
     void opening_window_ui();
-    void create_grid();
+    void create_grid(size_t); // according to the q index in all_question;
+    void cleanup();
     void populate_checkboxes(Question*);
 
 };

@@ -32,6 +32,10 @@ vector<Question> Question::read_questions_from_file(const string& filename){
         }
         Question question(parts_of_one_question);
         all_questions.push_back(question);
+        parts_of_one_question.clear();
+    }
+    for (auto& element : all_questions) {
+        std::cout << "Küsimus: " << element.getQuestionText().toStdString() << ' ';
     }
     input_file.close();
     return all_questions;

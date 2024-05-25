@@ -4,10 +4,10 @@
 #include <string>
 #include <QString>
 #include <vector>
+#include <iostream>
 #include <sstream>
 #include <fstream>
 #include <random>
-#include <tuple>
 using namespace std;
 
 // modified version of cpp_projekt/CLI_ver1/question.h
