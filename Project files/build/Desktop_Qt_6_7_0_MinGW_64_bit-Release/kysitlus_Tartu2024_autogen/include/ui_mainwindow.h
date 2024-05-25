@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QWidget>
 
@@ -20,15 +21,17 @@ class Ui_Tartu2024
 {
 public:
     QWidget *centralwidget;
+    QLabel *img2024;
+    QLabel *ending;
 
     void setupUi(QMainWindow *Tartu2024)
     {
         if (Tartu2024->objectName().isEmpty())
             Tartu2024->setObjectName("Tartu2024");
-        Tartu2024->resize(715, 319);
-        Tartu2024->setMinimumSize(QSize(300, 150));
-        Tartu2024->setMaximumSize(QSize(800, 800));
-        Tartu2024->setBaseSize(QSize(600, 250));
+        Tartu2024->resize(600, 400);
+        Tartu2024->setMinimumSize(QSize(600, 400));
+        Tartu2024->setMaximumSize(QSize(600, 400));
+        Tartu2024->setBaseSize(QSize(600, 400));
         QPalette palette;
         QBrush brush(QColor(0, 170, 0, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -52,12 +55,20 @@ public:
         palette.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         Tartu2024->setPalette(palette);
         QFont font;
-        font.setPointSize(12);
-        font.setBold(true);
+        font.setPointSize(18);
+        font.setWeight(QFont::Medium);
         Tartu2024->setFont(font);
+        Tartu2024->setCursor(QCursor(Qt::PointingHandCursor));
+        Tartu2024->setLayoutDirection(Qt::LeftToRight);
         Tartu2024->setAutoFillBackground(false);
         centralwidget = new QWidget(Tartu2024);
         centralwidget->setObjectName("centralwidget");
+        img2024 = new QLabel(centralwidget);
+        img2024->setObjectName("img2024");
+        img2024->setGeometry(QRect(40, 100, 521, 261));
+        ending = new QLabel(centralwidget);
+        ending->setObjectName("ending");
+        ending->setGeometry(QRect(100, 30, 401, 31));
         Tartu2024->setCentralWidget(centralwidget);
 
         retranslateUi(Tartu2024);
@@ -68,6 +79,8 @@ public:
     void retranslateUi(QMainWindow *Tartu2024)
     {
         Tartu2024->setWindowTitle(QCoreApplication::translate("Tartu2024", "Tartu2024", nullptr));
+        img2024->setText(QString());
+        ending->setText(QString());
     } // retranslateUi
 
 };

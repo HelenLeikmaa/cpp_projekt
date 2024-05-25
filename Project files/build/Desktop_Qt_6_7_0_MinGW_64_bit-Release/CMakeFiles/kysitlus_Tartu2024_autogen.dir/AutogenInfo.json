@@ -247,7 +247,8 @@
 		"C:/Qt/6.7.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake",
 		"C:/Qt/6.7.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.7.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake",
+		"C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/img.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files",
 	"DEP_FILE" : "C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/deps",

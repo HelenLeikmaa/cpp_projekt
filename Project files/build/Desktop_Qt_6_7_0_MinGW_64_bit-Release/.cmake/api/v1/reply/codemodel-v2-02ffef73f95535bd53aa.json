@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Release-9fde2deedebebef84774.json",
+					"jsonFile" : "directory-.-Release-e7cd62782f9ece209296.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "kysitlus_Tartu2024::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-kysitlus_Tartu2024-Release-42d6facc03c78b98ec20.json",
+					"jsonFile" : "target-kysitlus_Tartu2024-Release-19633c7bc502f9bfaa28.json",
 					"name" : "kysitlus_Tartu2024",
 					"projectIndex" : 0
 				},

@@ -27,7 +27,7 @@ void MainWindow::opening_window_ui(){
     question_label = new QLabel();
     checkboxes = new vector<QCheckBox*>;
     check_answers_btn = new QPushButton();
-    create_grid(current_q_index);
+    create_grid(current_q_index); // call after showing an img and a hello
     this->centralWidget()->setLayout(layout);
 };
 
@@ -61,6 +61,16 @@ void MainWindow::cleanup() {
     }
 }
 
+void MainWindow::game_end(){
+    question_label->hide();
+    check_answers_btn->hide();
+    tartu24 = new QPixmap(":/image/marek-lumi-2024.jpg");
+    int img_w = ui->img2024->width();
+    int img_h = ui->img2024->height();
+    ui->img2024->setPixmap(tartu24->scaled(img_w, img_h, Qt::KeepAspectRatioByExpanding));
+    ui->ending->setText("Hea töö! Oled kultuuriaasta tšempion!");
+}
+
 void MainWindow::on_CheckAnswer_clicked(){ // the button "Kontrolli" was clicked
 
     vector<QString> correct = all_questions[current_q_index].get_correct_answers();
@@ -71,23 +81,18 @@ void MainWindow::on_CheckAnswer_clicked(){ // the button "Kontrolli" was clicked
         }
     }   
     UserAnswer answer;
-    int result = answer.assessAnswer(correct, selected);
-    QString feedback = "Õigesti valitud: " + QString::number(result);
+    auto [result,feedback] = answer.assessAnswer(correct, selected);
     if (result == selected.size() && result == correct.size()){
-        feedback += "\nHea töö, see ongi õige vastus!";
         current_q_index++;
         }
-    else {
-        feedback += "\n..aga vastus ei ole päris korrektne:(\nProovi uuesti!";
-    }
     QMessageBox::about(this, "Tagasiside", feedback);
+
     if (current_q_index < all_questions.size()) {
         create_grid(current_q_index);
     }
     else {
-        question_label->setText("Jee, jõudsid edukalt lõpuni!");
         cleanup();
-        check_answers_btn->hide();
+        game_end();
     }
 
 

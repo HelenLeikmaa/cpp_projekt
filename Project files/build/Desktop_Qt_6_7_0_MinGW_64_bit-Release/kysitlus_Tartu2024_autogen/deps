@@ -131,6 +131,7 @@ kysitlus_Tartu2024_autogen/timestamp: \
 	C:/Qt/6.7.0/mingw_64/include/QtCore/qversiontagging.h \
 	C:/Qt/6.7.0/mingw_64/include/QtCore/qxptype_traits.h \
 	C:/Qt/6.7.0/mingw_64/include/QtCore/qyieldcpu.h \
+	C:/Qt/6.7.0/mingw_64/include/QtGui/QPixmap \
 	C:/Qt/6.7.0/mingw_64/include/QtGui/qaction.h \
 	C:/Qt/6.7.0/mingw_64/include/QtGui/qbitmap.h \
 	C:/Qt/6.7.0/mingw_64/include/QtGui/qbrush.h \
@@ -599,6 +600,7 @@ kysitlus_Tartu2024_autogen/timestamp: \
 	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project\ files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
 	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project\ files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/CMakeFiles/3.27.7/CMakeSystem.cmake \
 	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project\ files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/moc_predefs.h \
+	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project\ files/img.qrc \
 	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project\ files/main.cpp \
 	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project\ files/mainwindow.cpp \
 	C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project\ files/mainwindow.h \

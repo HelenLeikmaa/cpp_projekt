@@ -10,6 +10,7 @@
 #include <QDebug>
 #include <QVector>
 #include <QDir>
+#include <QPixmap>
 #include <iostream>
 
 QT_BEGIN_NAMESPACE
@@ -33,6 +34,7 @@ private slots:
 
 private:
     Ui::Tartu2024 *ui;
+    QPixmap *tartu24;
     QGridLayout *layout;
     QLabel *question_label;
     vector<QCheckBox*> *checkboxes;
@@ -43,6 +45,7 @@ private:
     void opening_window_ui();
     void create_grid(size_t); // according to the q index in all_question;
     void cleanup();
+    void game_end();
     void populate_checkboxes(Question*);
 
 };

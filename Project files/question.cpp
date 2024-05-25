@@ -42,9 +42,7 @@ vector<Question> Question::read_questions_from_file(const string& filename){
 }
 
 Question::Question(const vector<string>& parts_of_one_question){
-    //for (size_t i = 0; i < 4; ++i) {qDebug() << parts_of_one_question[i] << '\n';}
-
-    QString question_text = QString::fromStdString(parts_of_one_question[0]);
+    QString question_text = QString::fromStdString(parts_of_one_question[0]); // TODO: acceptable line width about 51 char
     QString question_type = QString::fromStdString(parts_of_one_question[1]);
     vector<QString> correct;
     stringstream ss1(parts_of_one_question[2]);

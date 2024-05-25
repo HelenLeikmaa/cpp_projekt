@@ -1,0 +1,22 @@
+{
+	"BUILD_DIR" : "C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files",
+	"CMAKE_SOURCE_DIR" : "C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files",
+	"INCLUDE_DIR" : "C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/kysitlus_Tartu2024_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/marek-lumi-2024.jpg"
+	],
+	"LOCK_FILE" : "C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/CMakeFiles/kysitlus_Tartu2024_autogen.dir/AutoRcc_img_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "img" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_img.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.7.0/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/CMakeFiles/kysitlus_Tartu2024_autogen.dir/AutoRcc_img_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/img.qrc",
+	"VERBOSITY" : 0
+}

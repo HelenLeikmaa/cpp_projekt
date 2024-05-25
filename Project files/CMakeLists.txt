@@ -29,6 +29,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         QA_attempt_3.txt
+        img.qrc
         #QA.txt
         #kas see peab siin olema?
     )

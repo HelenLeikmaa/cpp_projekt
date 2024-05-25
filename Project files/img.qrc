@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>marek-lumi-2024.jpg</file>
+    </qresource>
+</RCC>
