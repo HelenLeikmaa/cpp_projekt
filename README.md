@@ -7,7 +7,7 @@ Projekti esimeseks tähtajaks valmistasime CLI ja GUI.
 **Harus gui-development** kaustas Project Files on uusim graafilise kasutajaliidesega versioon. Sealt leiad ka esimeseks tähtajaks valmis ehitatud ja kokku pakitud gui programm. 
 
 Projekti teises etapis arenes edasi just graafiline kasutajaliides. 
-Sellega saab tutvuda kahel viisil: laadida kaustast Project Files alla valmisehitatud programm projekt_gui_final.zip, see lahti pakkida ja siis lihtsalt .exe failil topeltklikk teha; või kui on isu ka koodiga tutvuda, siis järgida allpool olevaid juhiseid:)
+Sellega saab tutvuda kahel viisil: laadida alla valmisehitatud programm projekt_gui_final.zip, see lahti pakkida ja siis lihtsalt .exe failil topeltklikk teha; või kui on isu ka koodiga tutvuda, siis järgida allpool olevaid juhiseid:)
 
 
 **Samm 1.** Kopeeri gui-development harus repositooriumi link.
