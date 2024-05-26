@@ -125,7 +125,7 @@ void MainWindow::on_CheckAnswer_clicked(){ // the button "Kontrolli" was clicked
         score -= 0.1;
     }
 
-    m_box->about(this, "Tagasiside", feedback);
+    m_box->about(this, "Tagasiside", feedback); // super-small, not the best option
 
     if (current_q_index < all_questions.size()) {
         create_grid(current_q_index);

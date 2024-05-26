@@ -42,8 +42,8 @@ vector<Question> Question::read_questions_from_file(const string& filename){
 
 Question::Question(const vector<string>& parts_of_one_question){
     QString question_text{};
-    if (parts_of_one_question[0].size() > 75) { // acceptable line width about 75 char
-        auto last_space = parts_of_one_question[0].substr(0, 75).find_last_of(' ');
+    if (parts_of_one_question[0].size() > 70) { // acceptable line width about 70 char
+        auto last_space = parts_of_one_question[0].substr(0, 70).find_last_of(' ');
         question_text = QString::fromStdString(parts_of_one_question[0].substr(0, last_space) + '\n' +
                                 parts_of_one_question[0].substr(last_space + 1, parts_of_one_question[0].size()));
     }

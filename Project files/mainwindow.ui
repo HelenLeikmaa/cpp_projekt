@@ -49,6 +49,15 @@
        </color>
       </brush>
      </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
      <colorrole role="Base">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
@@ -62,8 +71,8 @@
       <brush brushstyle="SolidPattern">
        <color alpha="255">
         <red>255</red>
-        <green>255</green>
-        <blue>155</blue>
+        <green>217</green>
+        <blue>0</blue>
        </color>
       </brush>
      </colorrole>
@@ -96,6 +105,15 @@
        </color>
       </brush>
      </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
      <colorrole role="Base">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
@@ -109,8 +127,8 @@
       <brush brushstyle="SolidPattern">
        <color alpha="255">
         <red>255</red>
-        <green>255</green>
-        <blue>155</blue>
+        <green>217</green>
+        <blue>0</blue>
        </color>
       </brush>
      </colorrole>
@@ -120,6 +138,15 @@
         <red>0</red>
         <green>170</green>
         <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Accent">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>245</red>
+        <green>127</green>
+        <blue>25</blue>
        </color>
       </brush>
      </colorrole>
@@ -149,6 +176,15 @@
         <red>255</red>
         <green>255</green>
         <blue>155</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Highlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>170</green>
+        <blue>0</blue>
        </color>
       </brush>
      </colorrole>
