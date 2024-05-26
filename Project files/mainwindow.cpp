@@ -4,8 +4,8 @@
 #include "results.h"
 
 
-static size_t current_q_index = 0; // this will increase each time a new question is selected
-static int score = 0; // TODO
+static size_t current_q_index = 0; // increases each time a new question is selected
+static float score = 0; // correct answer: += 1; incorrect answer: -= 0.1
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -15,21 +15,52 @@ MainWindow::MainWindow(QWidget *parent)
     const string& file_name = "QA_attempt_3.txt";
     all_questions = Question::read_questions_from_file(file_name);
     opening_window_ui();
+    QObject::connect(start_game_btn, &QPushButton::clicked,
+        this, &MainWindow::on_StartGame_clicked); // clicking on "Alusta Mängu" sends out a signal to a slot
     QObject::connect(check_answers_btn, &QPushButton::clicked,
-                     this, &MainWindow::on_CheckAnswer_clicked); // clicking on "Kontrolli" sends out a signal to a slot
+        this, &MainWindow::on_CheckAnswer_clicked); // clicking on "Kontrolli" sends out a signal to a slot
 }
 
 
 MainWindow::~MainWindow() {delete ui; }
 
+
 void MainWindow::opening_window_ui(){
-    layout = new QGridLayout();
+    layout = new QVBoxLayout();
     question_label = new QLabel();
     checkboxes = new vector<QCheckBox*>;
+    start_game_btn = new QPushButton();
     check_answers_btn = new QPushButton();
-    create_grid(current_q_index); // call after showing an img and a hello
+    spacer0 = new QSpacerItem(500, 425, QSizePolicy::Fixed, QSizePolicy::Fixed);
+    spacer1 = new QSpacerItem(500, 50, QSizePolicy::Fixed, QSizePolicy::Fixed);
+    spacer2 = new QSpacerItem(500, 20, QSizePolicy::Fixed, QSizePolicy::Fixed);
+    m_box = new QMessageBox();
+    game_start();
     this->centralWidget()->setLayout(layout);
 };
+
+
+void MainWindow::game_start() {
+    ui->message->setText("<3 Tartu 2024 teadmiste kontroll <3\n"
+                           "Iga küsimuse eest saad kuni ühe punkti.\n"
+                           "Iga vale vastus vähendab skoori 0.1 punkti võrra.");
+    startpic = new QPixmap(":/image/marek-lumi-2024.jpg");
+    int img_w = ui->img2024->width();
+    int img_h = ui->img2024->height();
+    ui->img2024->setPixmap(startpic->scaled(img_w, img_h, Qt::KeepAspectRatioByExpanding));
+    start_game_btn->setText("Alusta mängu!");
+    layout->addWidget(start_game_btn);
+    layout->insertSpacerItem(0, spacer0);
+}
+
+
+void MainWindow::on_StartGame_clicked(){
+    ui->message->hide();
+    ui->img2024 ->hide();
+    start_game_btn->hide();
+    layout->removeItem(spacer0);
+    create_grid(current_q_index);
+}
 
 void MainWindow::create_grid(size_t current_q_index){
     cleanup();
@@ -39,7 +70,9 @@ void MainWindow::create_grid(size_t current_q_index){
     layout->addWidget(question_label);
     populate_checkboxes(&q);
     check_answers_btn->setText("Kontrolli!");
-    layout->addWidget(check_answers_btn);
+    layout->addWidget(check_answers_btn, 9);
+    layout->insertSpacerItem(8, spacer1);
+    layout->insertSpacerItem(10, spacer2);
 }
 
 
@@ -55,7 +88,8 @@ void MainWindow::populate_checkboxes(Question* q){
 };
 
 void MainWindow::cleanup() {
-    layout->destroyed(question_label);
+    layout->removeItem(spacer1);
+    layout->removeItem(spacer2);
     for (auto& element : *checkboxes) {
         delete element;
     }
@@ -64,15 +98,16 @@ void MainWindow::cleanup() {
 void MainWindow::game_end(){
     question_label->hide();
     check_answers_btn->hide();
-    tartu24 = new QPixmap(":/image/marek-lumi-2024.jpg");
+    endpic = new QPixmap(":/image/anna-auza-seelik.jpg");
     int img_w = ui->img2024->width();
     int img_h = ui->img2024->height();
-    ui->img2024->setPixmap(tartu24->scaled(img_w, img_h, Qt::KeepAspectRatioByExpanding));
-    ui->ending->setText("Hea töö! Oled kultuuriaasta tšempion!");
+    ui->img2024->setPixmap(endpic->scaled(img_w, img_h, Qt::KeepAspectRatioByExpanding));
+    ui->img2024->show();
+    ui->message->setText("Hea töö! \nSaid kokku " + QString::number(score) + " punkti.\nOled kultuuriaasta tšempion!");
+    ui->message->show();
 }
 
 void MainWindow::on_CheckAnswer_clicked(){ // the button "Kontrolli" was clicked
-
     vector<QString> correct = all_questions[current_q_index].get_correct_answers();
     vector<QString> selected{}; // here be the answers the user selected
     for (const auto& element : *checkboxes) {
@@ -83,9 +118,14 @@ void MainWindow::on_CheckAnswer_clicked(){ // the button "Kontrolli" was clicked
     UserAnswer answer;
     auto [result,feedback] = answer.assessAnswer(correct, selected);
     if (result == selected.size() && result == correct.size()){
+        score++;
         current_q_index++;
         }
-    QMessageBox::about(this, "Tagasiside", feedback);
+    else {
+        score -= 0.1;
+    }
+
+    m_box->about(this, "Tagasiside", feedback);
 
     if (current_q_index < all_questions.size()) {
         create_grid(current_q_index);

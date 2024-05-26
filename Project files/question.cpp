@@ -1,5 +1,4 @@
 #include "question.h"
-// modified version of cpp_projekt/CLI_ver1/question.cpp
 
 
 Question::Question(QString q, QString type, vector<QString> correct, vector<QString> incorrect):
@@ -42,7 +41,15 @@ vector<Question> Question::read_questions_from_file(const string& filename){
 }
 
 Question::Question(const vector<string>& parts_of_one_question){
-    QString question_text = QString::fromStdString(parts_of_one_question[0]); // TODO: acceptable line width about 51 char
+    QString question_text{};
+    if (parts_of_one_question[0].size() > 75) { // acceptable line width about 75 char
+        auto last_space = parts_of_one_question[0].substr(0, 75).find_last_of(' ');
+        question_text = QString::fromStdString(parts_of_one_question[0].substr(0, last_space) + '\n' +
+                                parts_of_one_question[0].substr(last_space + 1, parts_of_one_question[0].size()));
+    }
+    else {
+        question_text= QString::fromStdString(parts_of_one_question[0]);
+    }
     QString question_type = QString::fromStdString(parts_of_one_question[1]);
     vector<QString> correct;
     stringstream ss1(parts_of_one_question[2]);

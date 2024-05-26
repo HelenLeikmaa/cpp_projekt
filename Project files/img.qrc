@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/image">
         <file>marek-lumi-2024.jpg</file>
+        <file>anna-auza-seelik.jpg</file>
     </qresource>
 </RCC>

@@ -208,7 +208,7 @@ build kysitlus_Tartu2024_autogen/timestamp kysitlus_Tartu2024_autogen/mocs_compi
 #############################################
 # Custom command for kysitlus_Tartu2024_autogen\EWIEGA46WW\qrc_img.cpp
 
-build kysitlus_Tartu2024_autogen/EWIEGA46WW/qrc_img.cpp | ${cmake_ninja_workdir}kysitlus_Tartu2024_autogen/EWIEGA46WW/qrc_img.cpp: CUSTOM_COMMAND C$:/Users/Lenovo/Desktop/C++/cpp_projekt/Project$ files/img.qrc CMakeFiles/kysitlus_Tartu2024_autogen.dir/AutoRcc_img_EWIEGA46WW_Info.json C$:/Users/Lenovo/Desktop/C++/cpp_projekt/Project$ files/marek-lumi-2024.jpg C$:/Qt/6.7.0/mingw_64/./bin/rcc.exe || kysitlus_Tartu2024_autogen kysitlus_Tartu2024_autogen_timestamp_deps
+build kysitlus_Tartu2024_autogen/EWIEGA46WW/qrc_img.cpp | ${cmake_ninja_workdir}kysitlus_Tartu2024_autogen/EWIEGA46WW/qrc_img.cpp: CUSTOM_COMMAND C$:/Users/Lenovo/Desktop/C++/cpp_projekt/Project$ files/img.qrc CMakeFiles/kysitlus_Tartu2024_autogen.dir/AutoRcc_img_EWIEGA46WW_Info.json C$:/Users/Lenovo/Desktop/C++/cpp_projekt/Project$ files/marek-lumi-2024.jpg C$:/Users/Lenovo/Desktop/C++/cpp_projekt/Project$ files/anna-auza-seelik.jpg C$:/Qt/6.7.0/mingw_64/./bin/rcc.exe || kysitlus_Tartu2024_autogen kysitlus_Tartu2024_autogen_timestamp_deps
   COMMAND = cmd.exe /C "cd /D "C:\Users\Lenovo\Desktop\C++\cpp_projekt\Project files\build\Desktop_Qt_6_7_0_MinGW_64_bit-Release" && C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc "C:/Users/Lenovo/Desktop/C++/cpp_projekt/Project files/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/CMakeFiles/kysitlus_Tartu2024_autogen.dir/AutoRcc_img_EWIEGA46WW_Info.json" Release"
   DESC = Automatic RCC for img.qrc
   restat = 1
